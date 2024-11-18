@@ -18,6 +18,9 @@ header{
 #logo{
     width: 130px;
     height: auto;
+    position: absolute;
+    left: 30px;
+    top: 1px;
 }
 
 nav{
