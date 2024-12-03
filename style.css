@@ -185,7 +185,9 @@ span{
         flex-direction: column;
     }
     .trailer{
-        width: 100%;
+        width: 100vw;
+        padding-left: 20px;
+
     }
     #sinopse{
         width: 95%;
@@ -201,7 +203,11 @@ span{
         margin-top: 30px;
     }
     .cards-content{
+        width: 70vw;
     grid-template-columns: 1fr;
     margin-top: 150px;
+}
+.actor-cards-container{
+    margin: 0px;
 }
 }
