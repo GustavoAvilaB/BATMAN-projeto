@@ -18,9 +18,6 @@ header{
 #logo{
     width: 130px;
     height: auto;
-    position: absolute;
-    left: 30px;
-    top: 1px;
 }
 
 nav{
@@ -99,4 +96,112 @@ li:hover{
 .button:hover{
     background-color: white;
     color: black;
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+.banner-1 {
+    background-image: url(https://t.ctcdn.com.br/-tPm7Wx8i7jt1WLR8p8Y_3HQLYA=/640x360/smart/i586811.png);
+}
+.banner-2 {
+    background-image: url(https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2022/03/07/1422205986-catwoman-batman-zoekravitz.jpg);
+}
+.banner-3 {
+    background-image: url(https://preview.redd.it/l617izc155sb1.png?auto=webp&s=9f76d9a04ed15639f5fea3ee0c1d66f793aabfc4);
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+    #banner {
+        background-position: 40%;
+    }
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer{
+        width: 100%;
+    }
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content{
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+}
 }
